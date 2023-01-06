@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <style>
+    body{
+        background-color: black;
+    }
+    .box {
+        width: 120px;
+        height: 120px;
+        background: rgb(221,70,37);
+background: linear-gradient(90deg, rgba(221,70,37,1) 0%, rgba(175,156,8,1) 35%, rgba(113,213,91,1) 64%, rgba(65,193,219,1) 100%);
+    transition: 3s;
+    border-radius: 98% 2% 100% 0% / 71% 36% 64% 29% ;
+    animation-name: my-any;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    }
+    @keyframes my-any  {
+        0% {
+            left: 900px;
+            top: 50px;
+            transform : rotate(340deg);
+        }
+        25% {
+            left: 1000px;
+            top: 300px;
+        }
+        50% {
+            left: 500px;
+            top: 500px;
+            border-radius: 61% 39% 100% 0% / 100% 34% 66% 0% ;
+        }
+        75%{
+            left: 850px;
+            top: 250px;
+        }
+        100% {
+            left:400px ;
+            top: 100px;
+        }
+    }
+    .block {
+        width: 250px;
+        height: 250px;
+        background: rgb(236,43,1);
+background: linear-gradient(90deg, rgba(236,43,1,1) 0%, rgba(67,245,96,1) 35%, rgba(228,16,220,1) 64%, rgba(13,188,223,1) 100%);
+        transition: 3s;
+        border-radius: 42% 58% 39% 61% / 0% 100% 0% 100% ;
+        animation-name: my-hobby;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        position: absolute;
+    }
+    @keyframes my-hobby {
+        0%{
+            left: 150px;
+            top: 500px;
+            transform: rotate(-360deg);
+        }
+        25%{
+            left: 900px;
+            top: 350px;
+        }
+        50%{
+            left: 700px;
+            top: 100px;
+           border-radius: 51% 49% 93% 7% / 39% 20% 80% 61% ; 
+        }
+        75%{
+            left: 900px;
+            top: 450px;
+        }
+        100%{
+            left:1000px;
+            top: 370px;
+            border-radius: 30% 70% 70% 30% / 20% 17% 83% 80% ;
+        }
+    }
+    .box2{
+        width: 180px;
+        height: 180px;
+        transition: 3s;
+        border-radius: 61% 39% 100% 0% / 100% 34% 66% 0%  ;
+        background: rgb(167,172,38);
+background: linear-gradient(90deg, rgba(167,172,38,1) 36%, rgba(199,59,67,1) 48%);
+        animation-name: my-animation;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        position: absolute;
+    }
+    @keyframes my-animation {
+        0%{
+            left: 1000px;
+            top: 30px;
+            transform : rotate(280deg);
+        }
+        25%{
+            left: 300px;
+            top: 80px;
+        }
+        50%{
+            left: 1000px;
+            top: 400px;
+        }
+        75%{
+            left: 300px;
+            top:250px ;
+            border-radius: 55% 45% 10% 90% / 61% 81% 19% 39% ;
+        }
+        100%{
+            left: 700px;
+            top: 100px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="block"></div>
+    <div class="box2"></div>
+</body>
+</html>
